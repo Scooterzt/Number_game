@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+}
+.wall{
+    display: inline-block;
+    vertical-align: center;
+    text-align: center;
+    margin-top: 100px;
+}
+form{
+    margin: 3px;
+}

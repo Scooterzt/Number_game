@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<title>session</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+    </head>
+    <body>
+        <div class="wall">
+            <h1>Welcome to Great Number Game!</h1>
+            <h3>Im thinking of a number between 1 and 100</h3>
+            <p>Take a gues!</p>
+            {% if answer: %}
+                <p>{{answer}}</p>
+            {% endif %}
+            <form action="/gues" method="post">
+                <input type="number" name="number" min="1" max="100">
+                <input type="submit">
+            </form>
+        </div>
+    </body>
+</html>
